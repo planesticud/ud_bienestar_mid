@@ -1,0 +1,24 @@
+version: '3'
+networks:
+ udbienestar:
+
+services:
+  ud_bienestar_mid:
+     image: damillano93/ud_bienestar_mid
+     container_name: ud_bienestar_mid
+     restart: on-failure
+     env_file:
+        - .env
+     networks:
+        - udbienestar
+     labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ud_bienestar_mid.rule=Host(`apibienestar.damillano.com`) && PathPrefix(`/api`)"
+      - "traefik.http.routers.ud_bienestar_mid.middlewares=ud_bienestar_mid-stripprefix"
+      - "traefik.http.middlewares.ud_bienestar_mid-stripprefix.stripprefix.prefixes=/api"
+      - "traefik.http.routers.ud_bienestar_mid.tls=true"
+      - "traefik.http.routers.ud_bienestar_mid.tls.certresolver=le"
+      - "traefik.http.services.ud_bienestar_mid.loadbalancer.server.port=80"           
+networks:
+  udbienestar:
+    external: true
