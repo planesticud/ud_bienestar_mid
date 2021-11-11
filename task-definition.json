@@ -17,7 +17,28 @@
       "command": null,
       "linuxParameters": null,
       "cpu": 0,
-      "environment": [],
+      "environment": [
+        {
+          "name": " GOOGLE_URL_TOKEN",
+          "value": "https://www.googleapis.com/oauth2/v1"
+        },
+        {
+          "name": "CALLBACK_URL",
+          "value": "http://localhost:80/callback"
+        },
+        {
+          "name": "CLIENT_ID",
+          "value": "706774605837-i44t0u38g0e0s862u79mhl9rlo6dh3ep.apps.googleusercontent.com"
+        },
+        {
+          "name": "CLIENT_URL",
+          "value": "https://bienestar.planestic.udistrital.edu.co/login"
+        },
+        {
+          "name": "SECRET",
+          "value": "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"
+        }
+      ],
       "resourceRequirements": null,
       "ulimits": null,
       "dnsServers": null,
@@ -46,18 +67,18 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "ud-bienestar-mid-container"
+      "name": "ud-bienestar-container2"
     }
   ],
   "placementConstraints": [],
-  "memory": "1024",
+  "memory": "2048",
   "taskRoleArn": null,
   "compatibilities": [
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:561162581195:task-definition/ud-bienestar-mid-task:1",
-  "family": "ud-bienestar-mid-task",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:561162581195:task-definition/ud-bienestar-task-2:1",
+  "family": "ud-bienestar-task-2",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -73,7 +94,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": "1024",
-  "revision": 2,
+  "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
