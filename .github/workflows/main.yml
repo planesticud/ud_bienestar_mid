@@ -43,7 +43,7 @@ env:
   GOOGLE_URL_TOKEN: "https://www.googleapis.com/oauth2/v1"
   CLIENT_URL: "https://bienestar.planestic.udistrital.edu.co/login"
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: ud-bienestar-mid           # set this to the name of the container in the
+  CONTAINER_NAME: ud-bienestar-mid-container           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 jobs:
