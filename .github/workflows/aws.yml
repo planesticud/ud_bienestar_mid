@@ -29,7 +29,7 @@ name: Deploy to Amazon ECS
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   AWS_REGION: us-east-1                   # set this to your preferred AWS region, e.g. us-west-1
@@ -37,13 +37,8 @@ env:
   ECS_SERVICE: bienestar-app-service                 # set this to your Amazon ECS service name
   ECS_CLUSTER: bienestar-cluster                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: task-definition.json # set this to the path to your Amazon ECS task definition
-  CLIENT_ID: "706774605837-i44t0u38g0e0s862u79mhl9rlo6dh3ep.apps.googleusercontent.com"
-  SECRET: "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"
-  CALLBACK_URL: "http://localhost:3000/callback"
-  GOOGLE_URL_TOKEN: "https://www.googleapis.com/oauth2/v1"
-  CLIENT_URL: "https://bienestar.planestic.udistrital.edu.co/login"
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: ud-bienestar-mid-container           # set this to the name of the container in the
+  CONTAINER_NAME: ud-bienestar-container2           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 jobs:
