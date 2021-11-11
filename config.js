@@ -10,7 +10,7 @@ const {
 
 
 module.exports={
-    port: PORT || 3000,
+    port: PORT || 80,
     clientId: CLIENT_ID,
     secret: SECRET,
     callback: CALLBACK_URL,
