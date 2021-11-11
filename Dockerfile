@@ -8,5 +8,7 @@ WORKDIR /usr/src/app
 COPY . .
 # instalar blibliotecas
 RUN npm install
-# ejecutar comando para iniciar el CRON
+# exponer el puerto
+EXPOSE 80
+# ejecutar comando para iniciar el servicio
 CMD npm start
