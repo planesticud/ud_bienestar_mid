@@ -56,7 +56,7 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:561162581195:task-definition/ud-bienestar-mid-task:2",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:561162581195:task-definition/ud-bienestar-mid-task:1",
   "family": "ud-bienestar-mid-task",
   "requiresAttributes": [
     {
